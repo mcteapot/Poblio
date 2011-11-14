@@ -1,0 +1,21 @@
+{
+  	"name": "poblio"
+  ,	"description": "A book trading appliction"
+  ,	"version": "0.0.1"
+  ,	"homepage": "http://cyborgdino.com"
+  ,	"author": "Arjun Prakash a.k.a. McTeapot"
+  ,	"private": true
+	, "engines": {
+	    "node": ">= 0.4.0"
+	  }
+	, "dependencies": {
+	    	"express": "2.4.x"
+	    ,	"mongoose": ">= 2.0.8"
+	    ,	"jade": ">= 0.0.1"
+	    ,	"less": "1.1.4"
+	  }
+	, "bin": {
+	    "nodepad": "bin/nodepad.js"
+	  }
+}
+
