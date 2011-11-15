@@ -1,0 +1,4 @@
+!=partial('title.jade')
+h3 Create your listing:
+form(method='post', action='/documents')
+  !=partial('fields.jade', { locals: { d: d } })

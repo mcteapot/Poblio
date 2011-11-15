@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -58,11 +57,11 @@ app.get('/', function(req, res) {
 
 // Document list
 app.get('/buy', function(req, res) {
-  res.render('documents/index.jade', { title: 'Poblio' });
+  res.render('buy', { title: 'Poblio' });
 });
 
 
-app.get('/buy.:format?', function(req, res) {
+app.get('/b.:format?', function(req, res) {
   Document.find().all(function(documents) {
     switch (req.params.format) {
       case 'json':
@@ -72,7 +71,7 @@ app.get('/buy.:format?', function(req, res) {
       break;
 
       default:
-        res.render('sell/index.jade', {
+        res.render('buy', {
           locals: { documents: documents }
         });
     }
@@ -81,7 +80,7 @@ app.get('/buy.:format?', function(req, res) {
 
 
 app.get('/sell', function(req, res) {
-  res.render('documents/sell.jade', {
+  res.render('sell', {
     locals: { d: new Document() }
   });
 });
@@ -110,4 +109,3 @@ if (!module.parent) {
   app.listen(3000);
   console.log("Express server listening on port %d in %s mode http://localhost:3000/", app.address().port, app.settings.env);
 }
-

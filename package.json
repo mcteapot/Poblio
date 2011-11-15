@@ -12,7 +12,6 @@
 	    	"express": "2.4.x"
 	    ,	"mongoose": ">= 2.0.8"
 	    ,	"jade": ">= 0.0.1"
-	    ,	"less": "1.1.4"
 	  }
 	, "bin": {
 	    "nodepad": "bin/nodepad.js"
