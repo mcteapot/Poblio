@@ -14,6 +14,7 @@ var Document;
 // Configuration
 app.configure(function(){
   app.set('views', __dirname + '/views');
+  app.use(express.favicon());
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
@@ -60,23 +61,38 @@ app.get('/buy', function(req, res) {
   res.render('buy', { title: 'Poblio' });
 });
 
+app.get('/print', function(req, res) {
+  Document.find({}, function(err,doc) {
+    if(err) {
+        res.render('index', { title: 'Print data error' });
+    } else {
+      res.render('index', { title: 'Objects are loaded form db' });
+      console.log(doc); 
+    }
+  });
+  console.log("after Document.find");
+});
 
-app.get('/b.:format?', function(req, res) {
-  Document.find().all(function(documents) {
+
+
+app.get('/buy.:format', function(req, res) {
+  console.log('working');
+  Document.find({}, function(err, doc) {
+    console.log('working');
     switch (req.params.format) {
       case 'json':
-        res.send(documents.map(function(d) {
-          return d.__doc;
+        res.send(doc.map(function(d) {
+          console.log('working');
+          return d.toObject();
         }));
       break;
 
       default:
-        res.render('buy', {
-          locals: { documents: documents }
-        });
+        res.send('Format not available fuck', 400);
     }
   });
 });
+
 
 
 app.get('/sell', function(req, res) {
@@ -107,5 +123,5 @@ app.del('/buy/:id.:format?', function(req, res) {
 
 if (!module.parent) {
   app.listen(3000);
-  console.log("Express server listening on port %d in %s mode http://localhost:3000/", app.address().port, app.settings.env);
+  console.log("Express server listening on port %d in %s mode http://localhost:%d/", app.address().port, app.settings.env, app.address().port);
 }
