@@ -58,7 +58,16 @@ app.get('/', function(req, res) {
 
 // Document list
 app.get('/buy', function(req, res) {
-  res.render('buy', { title: 'Poblio' });
+  Document.find({}, function(err,doc) {
+    if(err) {
+      res.write('loading error');
+    } else {
+      res.render('buy', { title: 'Poblio', listings: doc });
+      console.log(doc); 
+    }
+  });
+  console.log("after Document.find");
+  //res.render('buy', { title: 'Poblio' });
 });
 /*
 app.get('/buy.:format', function(req, res) {
@@ -79,6 +88,20 @@ app.get('/buy.:format', function(req, res) {
   });
 });
 */
+
+
+
+app.post('/submit.:format?', function(req, res) {
+  console.log('working00');
+  console.log(req.body);
+  console.log(req.params);
+  Document.find({}, function(err, doc) {
+
+
+  });
+  res.send("working");
+});
+
 
 app.get('/sell', function(req, res) {
   res.render('sell', {

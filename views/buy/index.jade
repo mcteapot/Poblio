@@ -1,2 +1,7 @@
 !=partial('title.jade')
-h3 Welcome to #{title}:
+h3 Welcome to #{title}, books listings:
+- for list in listings
+	h3= list.title
+	p= list.date
+	h4= list.price
+	li= list.data

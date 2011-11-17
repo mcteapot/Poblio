@@ -1,4 +1,4 @@
 !=partial('title.jade')
 h3 Create your listing:
-form(method='post', action='/buy')
+form(method='post', action='/submit.json')
   !=partial('fields.jade', { locals: { d: d } })
