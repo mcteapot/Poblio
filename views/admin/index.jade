@@ -1,0 +1,7 @@
+h1= title
+p This is admin #{title}
+- for list in listings
+	h3= list.title
+	p= list.date
+	h4= list.price
+	li= list.data

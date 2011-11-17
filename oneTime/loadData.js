@@ -6,9 +6,9 @@
 	console.log('working01');
 	var populateDocument = (function() {
 		var bookData01 = {
-		title: "Tale of Two Cities",
-		price: 33.30,
-		data: "no spam call 555-3853 ask for Archie"
+		title: "Hamlet",
+		price: 2.00,
+		data: "Hotties welcome, 555-2833 call Justain."
 		};
 		console.log('working02');
 		var taleDocument = new Document(bookData01);

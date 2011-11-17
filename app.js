@@ -60,7 +60,7 @@ app.get('/', function(req, res) {
 app.get('/buy', function(req, res) {
   res.render('buy', { title: 'Poblio' });
 });
-
+/*
 app.get('/buy.:format', function(req, res) {
   console.log('working');
   Document.find({}, function(err, doc) {
@@ -78,8 +78,7 @@ app.get('/buy.:format', function(req, res) {
     }
   });
 });
-
-
+*/
 
 app.get('/sell', function(req, res) {
   res.render('sell', {
@@ -90,9 +89,9 @@ app.get('/sell', function(req, res) {
 app.get('/admin', function(req, res) {
   Document.find({}, function(err,doc) {
     if(err) {
-        res.render('admin', { title: 'Print data error' });
+      res.write('loading error');
     } else {
-      res.render('index', { title: 'admin', listing: doc });
+      res.render('admin', { title: 'admin', listings: doc });
       console.log(doc); 
     }
   });
