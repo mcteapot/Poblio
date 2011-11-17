@@ -61,20 +61,6 @@ app.get('/buy', function(req, res) {
   res.render('buy', { title: 'Poblio' });
 });
 
-app.get('/print', function(req, res) {
-  Document.find({}, function(err,doc) {
-    if(err) {
-        res.render('index', { title: 'Print data error' });
-    } else {
-      res.render('index', { title: 'Objects are loaded form db' });
-      console.log(doc); 
-    }
-  });
-  console.log("after Document.find");
-});
-
-
-
 app.get('/buy.:format', function(req, res) {
   console.log('working');
   Document.find({}, function(err, doc) {
@@ -100,6 +86,19 @@ app.get('/sell', function(req, res) {
     locals: { d: new Document() }
   });
 });
+
+app.get('/admin', function(req, res) {
+  Document.find({}, function(err,doc) {
+    if(err) {
+        res.render('admin', { title: 'Print data error' });
+    } else {
+      res.render('index', { title: 'admin', listing: doc });
+      console.log(doc); 
+    }
+  });
+  console.log("after Document.find");
+});
+
 
 // Create document 
 app.post('/buy.:format?', function(req, res) {
