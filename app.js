@@ -48,13 +48,12 @@ app.configure('test', function() {
 app.Document = Document = require('./models.js').Document(db);
 
 app.get('/', function(req, res) {
-  res.redirect('/buy')
+  res.redirect('/buy');
 });
 
 /**
  * Route Pages.
  */
-
 
 // Document list
 app.get('/buy', function(req, res) {
@@ -69,39 +68,6 @@ app.get('/buy', function(req, res) {
   console.log("after Document.find");
   //res.render('buy', { title: 'Poblio' });
 });
-/*
-app.get('/buy.:format', function(req, res) {
-  console.log('working');
-  Document.find({}, function(err, doc) {
-    console.log('working');
-    switch (req.params.format) {
-      case 'json':
-        res.send(doc.map(function(d) {
-          console.log('working');
-          return d.toObject();
-        }));
-      break;
-
-      default:
-        res.send('Format not available fuck', 400);
-    }
-  });
-});
-*/
-
-
-
-app.post('/submit.:format?', function(req, res) {
-  console.log('working00');
-  console.log(req.body);
-  console.log(req.params);
-  Document.find({}, function(err, doc) {
-
-
-  });
-  res.send("working");
-});
-
 
 app.get('/sell', function(req, res) {
   res.render('sell', {
@@ -109,6 +75,9 @@ app.get('/sell', function(req, res) {
   });
 });
 
+app.get('/submit', function(req, res) {
+  res.render('submit');
+});
 app.get('/admin', function(req, res) {
   Document.find({}, function(err,doc) {
     if(err) {
@@ -124,6 +93,22 @@ app.get('/admin', function(req, res) {
 
 // Create document 
 app.post('/buy.:format?', function(req, res) {
+
+});
+
+app.post('/preview.:format?', function(req, res) { 
+  console.log(req.body.d);
+  console.log(req.params);
+    //res.render('submit');
+    var taleDocument = new Document(req.body.d);
+    return taleDocument.save(function(err, item) {
+      if(err) {
+        return console.log(err);
+      } else {
+          res.redirect('/submit');
+        return console.log(item);
+      }
+    });
 
 });
 
