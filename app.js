@@ -14,7 +14,7 @@ var Document;
 // Configuration
 app.configure(function(){
   app.set('views', __dirname + '/views');
-  app.use(express.favicon());
+  app.use(express.favicon('/public/images/favicon.ico'));
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());

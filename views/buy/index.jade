@@ -1,6 +1,6 @@
 !=partial('title.jade')
 h3 Welcome to #{title}, books listings:
-- for list in listings
+- for list in listings.reverse()
 	h3= list.title
 	p= list.date
 	h4= list.price
