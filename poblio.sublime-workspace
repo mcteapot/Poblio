@@ -1,0 +1,433 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "!=partial('title.jade')\nh3 Welcome to #{title}:\n",
+			"file": "views/documents/index.jade",
+			"file_size": 63,
+			"file_write_time": 1321263047000000,
+			"settings":
+			{
+				"buffer_size": 48,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/buy/index.jade",
+			"settings":
+			{
+				"buffer_size": 158,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 3039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/submit/index.jade",
+			"settings":
+			{
+				"buffer_size": 106,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/sell/index.jade",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 473,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/admin/index.jade",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 129.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/arjun/Development/working/poblio/public/javascripts/application.js",
+		"/home/arjun/Development/working/poblio/views/sell/fields.jade",
+		"/home/arjun/Development/working/poblio/models.js",
+		"/home/arjun/Development/working/poblio/public/javascripts/working.js",
+		"/home/arjun/Development/working/poblio/public/javascripts/ application.js",
+		"/home/arjun/Development/working/poblio/views/layout.jade",
+		"/home/arjun/Development/working/poblio/views/sell/index.jade",
+		"/home/arjun/Development/working/poblio/package.json",
+		"/home/arjun/Development/working/poblio/views/documents/sell.jade",
+		"/home/arjun/Development/working/poblio/views/partials/listings/fields.jade",
+		"/home/arjun/Development/working/poblio/views/partials/index/title.jade",
+		"/home/arjun/Development/working/poblio/app.js",
+		"/home/arjun/Development/working/poblio/views/documents/index.jade",
+		"/home/arjun/Development/working/nodepad/test/app.test.js",
+		"/home/arjun/Development/working/poblio/public/stylesheets/style.css",
+		"/home/arjun/Development/working/poblio/public/stylesheets/style.less",
+		"/home/arjun/Development/working/nodepad/views/documents/edit.jade",
+		"/home/arjun/Development/working/nodepad/views/documents/index.jade",
+		"/home/arjun/Development/working/nodepad/views/documents/new.jade",
+		"/home/arjun/Development/working/poblio/views/partials/listing/fields.jade",
+		"/home/arjun/Development/working/nodepad/app.js",
+		"/home/arjun/Development/working/nodepad/views/documents/show.jade",
+		"/home/arjun/Development/working/nodepad/models.js",
+		"/home/arjun/Development/working/poblio/views/documents/fields.jade",
+		"/home/arjun/Development/working/poblio/views/index.jade",
+		"/home/arjun/Development/working/poblio/views/documents/new.jade",
+		"/home/arjun/Development/working/nodepad/views/partials/documents/fields.jade",
+		"/home/arjun/Development/working/temp/nodepad/package.json",
+		"/home/arjun/Development/working/poblio/ models.js",
+		"/home/arjun/Development/working/nodepad/views/documents/fields.jade",
+		"/home/arjun/Development/working/temp/nodepad/app.js",
+		"/home/arjun/Development/working/temp/nodepad/bin/nodepad.js",
+		"/home/arjun/Development/working/temp/nodepad/test/app.test.js",
+		"/home/arjun/Development/working/nodepad/views/layout.jade",
+		"/home/arjun/Development/working/nodepad/views/index.jade",
+		"/home/arjun/Development/working/nodepad/views/new.jade",
+		"/home/arjun/Development/working/nodepad/views/edit.jade",
+		"/home/arjun/Desktop/Untitled Folder/views/documents/new.jade",
+		"/home/arjun/Desktop/Untitled Folder/views/documents/index.jade",
+		"/home/arjun/Development/working/nodetube/app.js",
+		"/home/arjun/Development/working/nodetube/package.json",
+		"/home/arjun/Development/working/temp/app.js",
+		"/home/arjun/Development/working/temp/app02.js",
+		"/home/arjun/Development/working/temp/test.html",
+		"/home/arjun/Development/learning/jade/helloword.jade",
+		"/home/arjun/Development/learning/jade/navigation.jade",
+		"/home/arjun/.config/sublime-text-2/Packages/Default/Global.sublime-settings",
+		"/home/arjun/.config/sublime-text-2/Packages/User/Global.sublime-settings"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/document",
+			"less",
+			"new",
+			"nodepad",
+			"load_static_file"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/documents/index.jade",
+					"settings":
+					{
+						"buffer_size": 48,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/buy/index.jade",
+					"settings":
+					{
+						"buffer_size": 158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 3039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1580,
+								1580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 384.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/submit/index.jade",
+					"settings":
+					{
+						"buffer_size": 106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/sell/index.jade",
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "views/layout.jade",
+					"settings":
+					{
+						"buffer_size": 473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "views/admin/index.jade",
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
